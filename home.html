@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAE Climate Change Report 2024</title>
+  <!-- css link  -->
+  <link rel="stylesheet" href="css.css">
+  <style>
+.major-projects {
+  padding: 30px;
+  text-align: center;
+}
+
+.project-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.media-block {
+  width: 300px;
+  text-align: center;
+}
+
+.media-block img,
+.media-block iframe {
+  width: 100%;
+  height: 85%;
+  border-radius: 8px;
+}
+
+.project-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.video-icon img {
+  margin-top: 12px;
+  width: 40px;
+}
+
+.extra-buttons {
+  margin-top: 30px;
+}
+
+.nav-btn {
+  margin: 0 10px;
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: #555;
+}
+
+.contact-banner {
+  background: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 1258px){
+.section-title{
+  font-size: 3rem;
+}
+.text-content h1{
+ font-size: 2rem;
+}
+}
+@media (max-width: 856px){
+  .text-content h1{
+    font-size: 2rem;
+  }
+  .header-overlay{
+    align-items: center;
+  flex-direction: column;
+  }
+.section-title{
+  font-size: 2rem;
+}
+.work-content{
+  flex-direction: column;
+}
+.swot-content{
+  flex-direction: column;
+}
+.la-wildfire-content{
+  flex-direction: column;
+}
+.contact-banner {
+  font-size: 10px;
+}
+}
+@media (max-width: 559px){
+  .text-content h1{
+    font-size: 1rem;
+  }
+  .video-thumbnail {
+        width: 77%;
+  }
+}
+
+@media (max-width: 559px){
+  .text-content h1{
+    font-size: 1rem;
+  }
+}
+  </style>
+   <!-- Font Awesome (for menu icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <!-- Header Section -->
+  <header class="header-section">
+    <video autoplay muted loop class="header-video">
+      <source src="./img vid/Ice and Forest Cover_45F.mp4" type="video/mp4" />
+    </video>
+    <div class="header-overlay">
+      <div class="text-content">
+        <h1>Hi, I'm Hamid Gulzar <br> your Geo Spatial Support</h1>
+      </div>
+      <div class="image-content">
+        <img src="./img vid/asdasd.jpg" alt="Preview of Project" class="video-thumbnail clickable-image" />
+      </div>
+    </div>
+  </header>
+  <!-- Recent Work Section -->
+  <section class="recent-work">
+    <h2 class="section-title">Recent Work</h2>
+    <div class="work-content">
+      <div class="work-image">
+        <img src="./img vid/1.png" alt="Climate Impact Diagram">
+      </div>
+      <div class="work-description">
+        <h3>UAE 2024 Climate Change Report</h3>
+        <p>
+         Climate change poses significant challenges for the United Arab Emirates (UAE), a country already characterized by its arid climate and high temperatures.
+        Rising global temperatures are exacerbating heatwaves, leading to increased water scarcity and higher energy demands for cooling.
+        The UAE also faces threats from rising sea levels, flash flooding, and droughts. 
+        In response, the UAE has taken proactive measures such as investing in renewable energy, promoting water conservation, and committing to net-zero emissions by 2050.
+        These efforts highlight the UAE’s recognition of climate risks and its dedication to sustainable development.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- SWOT Satellite Section -->
+  <section class="swot-section">
+    <h2 class="section-title">SWOT Satellite Data Processing</h2>
+    <div class="swot-content">
+      <div class="swot-images-left">
+        <img src="./img vid/2.png" alt="SWOT Map 1">
+      </div>
+      <div class="swot-text-image">
+        <div class="swot-description">
+          <p>The Surface Water and Ocean Topography (SWOT) satellite, launched on December 16, 2022, a collaborative mission between NASA and CNES (French Space Agency), is designed to provide high-resolution measurements of water elevation changes, slope, and river width coverage across Earth's surface. Using advanced radar interferometry, SWOT can monitor water levels in lakes, rivers, and oceans, enabling scientists to track changes in water storage, flow dynamics, and flood patterns. Recently, SWOT's data has been made open access.
+This data is invaluable for improving water resource management, predicting floods and droughts, and understanding the impacts of climate change on freshwater systems. SWOT's ability to measure river width and slope also aids in modeling river discharge and assessing the health of aquatic ecosystems, making it a critical tool for sustainable water management and disaster preparedness.</p>
+        </div>
+        <img src="./img vid/3.png" alt="SWOT Ethiopia Map" class="swot-bottom-image clickable-image" />
+      </div>
+    </div>
+  </section>
+  <!-- Centered Image Pair Section -->
+  <section class="centered-image-section">
+    <div class="centered-image-container">
+      <img src="./img vid/4.png" alt="Comparison Image 1">
+      <img src="./img vid/5.png" alt="Comparison Image 2">
+    </div>
+  </section>
+    <!-- Image Modal Popup -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+  <!-- LA Wildfire & NOx Section -->
+    <section class="la-wildfire-section">
+    <h2 class="section-title">Los Angeles Wildfire and NOx Change</h2>
+    <div class="la-wildfire-content">
+        <!-- 40% width image -->
+        <div class="la-image-40">
+        <img src="./img vid/6.png" alt="Wildfire Image">
+        </div>
+
+        <!-- 60% width image -->
+        <div class="la-image-60">
+        <img src="./img vid/7.png" alt="NOx Change Map">
+        </div>
+    </div>
+    </section>
+
+
+
+
+<section class="major-projects">
+  <h2 class="section-title">Major Projects</h2>
+
+  <!-- Row: Image 1 + Image 2 + Video -->
+  <div class="project-row">
+    <!-- Image 1 with its button -->
+    <div class="media-block">
+      <img src="./img vid/8.png" alt="Project Image 1" />
+      <a href="./Remote Sensing Project.html">
+        <button class="project-btn">Remote Sensing Projects</button></a>
+    </div>
+
+    <!-- Image 2 with its button -->
+    <div class="media-block">
+      <img src="./img vid/9.png" alt="Project Image 2" />
+      <a href="./UAE Climate Report 2024.html">
+        <button class="project-btn">UAE Climate Change Report 2024</button>
+      </a>
+    </div>
+
+    <!-- Video with its button and icon -->
+    <div class="media-block">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/e-ViOIcBTgI?si=nqAfZWItiV7poWEn"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+      <a href="https://www.youtube.com/watch?v=e-ViOIcBTgI&t=17s"><button class="project-btn">Flood Detection using Sentinel 1</button></a>
+    </div>
+  </div>
+
+  <!-- Two general buttons under the whole row -->
+  <div class="extra-buttons">
+    <a href="./About Me.html"><button class="nav-btn">About Me</button></a>
+    <a href="./project.html"><button class="nav-btn">All Projects</button></a>
+    <a href="https://www.linkedin.com/in/hamid-gulzar-534104231" style="text-decoration: none; font-size: 2rem; color: #1b4154;"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</section>
+
+<!-- Contact Banner Section -->
+<section class="contact-banner">
+  <h2>Get in touch at hamidgul.gis@gmail.com</h2>
+</section>
+
+
+
+
+
+
+  <script src="project1.js"></script>
+   <!-- Working JavaScript at the end -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.getElementById('nav-links');
+      const dropdown = document.getElementById('dropdown');
+      const dropbtn = document.getElementById('dropbtn');
+
+      // Toggle mobile nav menu
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Toggle dropdown on small screens
+      dropbtn.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropdown.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+<script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+</body>
+</html>

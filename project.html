@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height:29vh;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .opinion-section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      max-width: 700px;
+      margin: 0 auto 10px 10px;
+    }
+
+    .opinion-heading {
+      font-size: 2.2rem;
+      color: #1d4459;
+    }
+
+    .dropdown-icon {
+      font-size: 1.5rem;
+      color: #1d4459;
+      margin-left: 10px;
+      user-select: none;
+    }
+
+    .fade-line {
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(to right, rgba(29,68,89,0), #1d4459 50%, rgba(29,68,89,0));
+      margin: 0 auto 25px auto;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      margin: 8px 0;
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .opinion-dropdown a:hover {
+      background-color: #e3e3e3;
+    }
+
+    .opinion-paragraph {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #333;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .center-heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+.info-section {
+  padding: 50px 20px;
+}
+
+.info-content {
+  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-text {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.center-heading {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1d4459;
+  padding: 10px 6rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.description-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.info-image {
+  flex: 1 1 45%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .opinion-heading-container {
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .opinion-heading {
+    font-size: 1.8rem;
+  }
+
+  .fade-line {
+    width: 90%;
+  }
+
+  .opinion-paragraph,
+  .opinion-dropdown {
+    text-align: left;
+  } 
+
+  .info-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-text, .info-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  .description-text {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .info-image img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 490px){
+ .center-heading {
+    padding: 10px 30px; 
+    font-size: 15px;
+  }
+}
+@media (max-width: 390px){
+ .center-heading {
+    padding: 10px 30px; 
+    font-size: 15px;
+  }
+}
+@media (max-width: 922px){
+    .info-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- Header section with general video -->
+<header>
+  <img src="./img vid/landsat_ts_cfo.gif" alt="Header Image" />
+</header>
+
+  <!-- Opinions Section -->
+  <section class="opinion-section">
+    <div class="opinion-heading-container" onclick="toggleDropdown()">
+      <h1 class="opinion-heading">Projects Navigation</h1>
+      <span class="dropdown-icon">▽</span>
+    </div>
+
+    <div class="fade-line"></div>
+
+    <div class="opinion-dropdown" id="dropdown" style="text-decoration: underline;">
+      <a href="./UAE Climate Report 2024.html">• UAE Climate Report 2024</a>
+      <a href="./Remote Sensing Project.html">• Remote Sensing Projects</a>
+      <a href="./Machine Learning in GIS.html">• Machine Learning Projects</a>
+      <a href="./Land Deformation Detection.html">• Land Deformation Detection</a>
+      <a href="./Disaster Detection.html">• Disaster Detection and Mapping</a>
+    </div>
+  </section>
+  
+
+  <section class="center-heading-section">
+  <h5 class="center-heading"><a href="./UAE Climate Report 2024.html" style="text-decoration: none; color: white;">UAE Climate Change Report 2024</a></h5>
+</section>
+
+<!-- Centered H5 + Description + Image Section -->
+<section class="info-section">
+  <div class="info-content">
+    <div class="info-text">
+      <p class="description-text" style="font-size: 28px;">
+       <b>This project, the UAE Climate Report 2024, explores the impacts of climate change on the UAE region, highlighting key environmental challenges such as rising temperatures, water scarcity, and sea-level rise. It also proposes actionable mitigation strategies, including renewable energy adoption, water conservation, and sustainable urban planning, to support the UAE's climate resilience and net-zero goals. </b></p>
+    </div>
+    <div class="info-image">
+      <img src="./img vid/12.png" alt="Geospatial Insights" />
+    </div>
+  </div>
+</section>
+
+
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+</body>
+</html>

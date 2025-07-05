@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Sensing Projects</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Top Navigation Links */
+    .top-links {
+      background: #f9f9f9;
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .top-links ul li a {
+      text-decoration: none;
+      color: #19486e;
+      font-size: 14px;
+    }
+
+    .top-links ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    /* Section Header with Dropdown */
+    .main-heading {
+      margin-bottom: 30px;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .opinion-heading {
+      color: #19486e;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .dropdown-icon {
+      font-size: 20px;
+      color: #19486e;
+    }
+
+    .fade-line {
+      height: 2px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      color: #19486e;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title hr {
+  border: none;
+  height: 2px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #19486e;
+}
+
+.sub-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.right-sub-image {
+  flex: 1;
+}
+
+.sub-images img {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+}
+
+.side-image-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.main-image-left img {
+  width: 100%;
+  max-width: 32rem;
+}
+
+.main-title-right {
+  flex: 1;
+  min-width: 250px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.main-title-right h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #19486e;
+}
+.main-title-right h2, p{
+  text-align:left;
+}
+
+.main-title-right hr {
+  height: 2px;
+  border: none;
+  background-color: #ccc;
+  margin: 5px 0;
+}
+
+/* Sub Images Layout */
+.sub-images-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.right-sub-image {
+  flex: 1;
+  max-width: 41rem;
+}
+
+.sub-images-layout img {
+  width: 100%;
+}
+.imag{
+  max-width: 30rem;
+}
+.sub-images-layout {
+  margin-top: 30px;
+}
+iframe{
+      width: 100%;
+    height: auto;
+}
+.div{
+  max-width: 0;
+}
+.two-images-section {
+  margin: 40px auto;
+  max-width: 980px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.two-images-section .section-title {
+  font-size: 24px;
+  color: #19486e;
+  margin-bottom: 20px;
+}
+
+.two-images-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.two-images-wrapper img {
+  max-width: 100%;
+  width: 444px;
+}
+
+@media (max-width: 1146px){
+.div{
+  max-width: 22px;
+}
+}
+@media (max-width: 732px){
+   .sub-images-layout{ flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+   }
+}
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+
+  <!-- Top Links -->
+  <nav class="top-links">
+    <ul>
+      <li><a href="#Remote sensing ">Land Deformation and Its Detection Using Remote Sensing</a></li>
+      <li><a href="#Delhi Groundwater">Delhi Groundwater depletion causing Land deformation</a></li>
+      <li><a href="#PS InSAR">Use of PS InSAR, Borehole and Grace Groundwater anomaly datasets to study impact on Lahore land deformation</a></li>
+      <li><a href="#Landslide">Landslide and land Deformation due to Earthquake in Khost City, Afghanistan 22-June-2022 and Damage Proxy mapping</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Section Heading and Dropdown -->
+    <section class="main-heading" id="Remote sensing ">
+      <div class="opinion-heading-container" onclick="toggleDropdown()">
+        <h1 class="opinion-heading">Volcanic Eruption and Disaster mapping in Tonga</h1>
+        <span class="dropdown-icon">▽</span>
+      </div>
+      <div class="fade-line"></div>
+      <div class="opinion-dropdown" id="dropdown">
+        <p>Land deformation, including subsidence, uplift, and lateral shifts, occurs due to various natural and anthropogenic factors such as tectonic activity, groundwater extraction, mining, and infrastructure development. Remote sensing, particularly <b> Interferometric Synthetic Aperture Radar (InSAR)</b>, has revolutionized the monitoring of land deformation by providing precise, high-resolution measurements over large areas. Sentinel-1, a radar satellite mission from the European Space Agency (ESA), is widely used for deformation studies due to its all-weather, day-and-night imaging capabilities.</p>
+        <p>Advanced InSAR techniques, such as <b> Persistent Scatterer InSAR (PS InSAR)</b> and <b>Small Baseline Subset (SBAS)</b>, allow for long-term monitoring of slow-moving deformations by analyzing phase changes in radar signals over multiple acquisitions. PS InSAR is effective in urban environments with stable reflectors like buildings, while SBAS is suitable for detecting broader ground movements over vegetated or rural regions.<b> Differential InSAR (D-InSAR)</b> is another widely used technique that compares two SAR images acquired at different times to measure surface displacement with <b> millimeter-level accuracy.</b></p>
+        <P>For <b>landslide detection</b>, remote sensing techniques such as <b>InSAR, optical imagery, and LiDAR </b>are used to analyze slope instability, ground movement patterns, and post-landslide changes. Sentinel-1’s <b> InSAR time-series analysis</b> provides early warnings of slope deformation, while high-resolution optical data from Sentinel-2 or commercial satellites helps classify landslide-affected areas. Integrating these remote sensing techniques enhances disaster preparedness, risk assessment, and mitigation strategies for land deformation and associated hazards.</P>
+      </div>
+    </section>
+
+ <!-- Section: Image + Title Side-by-Side -->
+<section class="side-image-title" id="Delhi Groundwater">
+  <div class="main-image-left">
+    <img src="./img vid/27.jpg" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Delhi Groundwater depletion causing Land deformation</h2>
+    <hr>
+    <p>Groundwater depletion in Delhi and its associated land deformation were analyzed using Sentinel-1 SAR data and the Small Baseline Subset (SBAS) technique by processing Single Look Complex (SLC) interferograms. The observed land deformation in the Delhi region was around -3 mm per 12 days, with the majority concentrated in the New Delhi area. Additionally, GRACE-derived groundwater anomalies indicated a significant depletion of groundwater, with a total loss of over 50 cm from 2003 to 2022. The area of analysis covered a 0.5° x 0.5° grid. </p>
+  </div>
+</section>
+
+<!-- Section: Sub Images Layout -->
+<section class="sub-images-layout">
+  <div class="left-sub-images">
+    <img src="./img vid/28.png" alt="Urban Area 1">
+    <img src="./img vid/29 .png" alt="Urban Area 2">
+  </div>
+  <div class="right-sub-image">
+    <img src="./img vid/30.jpg" alt="Urban Area 3">
+  </div>
+</section>
+
+
+<section class="side-image-title" id="PS InSAR">
+  <div class="main-image-left">
+    <img src="./img vid/31.jpg" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Use of PS InSAR, Borehole and Grace Groundwater anomaly datasets to study impact on Lahore land deformation</h2>
+    <hr>
+    <p>(Under Publication)</p>
+  </div>
+</section>
+
+<section class="side-image-title" id="Landslide">
+  <div class="main-image-left">
+    <img src="./img vid/32.png" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Landslide and land Deformation due to Earthquake in Khost City, Afghanistan 22-June-2022 and Damage Proxy mapping</h2>
+    <hr>
+    <p>The earthquake that struck Khost City, Afghanistan, on June 22, 2022, triggered significant landslides and land deformation, causing extensive damage to infrastructure and livelihoods. or monitoring earthquake-induced land deformation, ,<b> Damage Proxy Mapping (DPM)</b> using <b>Sentinel-1 Synthetic Aperture Radar (SAR)</b> is a vital tool. DPM identifies areas of structural damage by analyzing changes in radar backscatter before and after the event. In this case, Sentinel-1 SAR imagery revealed significant deformation patterns and damage zones caused by earthquake in Khost City. Advanced <b> Interferometric Synthetic Aperture Radar (InSAR) </b> techniques, such as <b> D-InSAR</b>, measured ground displacement with high accuracy. </p>
+  </div>
+</section>
+
+<!-- Section: Two Images Side by Side in Center -->
+<section class="two-images-section">
+  <!-- <h2 class="section-title">Comparison Overview</h2> -->
+  <div class="two-images-wrapper">
+    <img src="./img vid/33.png" alt="Image 1">
+    <img src="./img vid/34.png" alt="Image 2">
+  </div>
+</section>
+
+
+  </main>
+
+
+  <!-- JavaScript -->
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+ <script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+</body>
+</html>

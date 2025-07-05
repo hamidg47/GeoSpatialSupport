@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Sensing Projects</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Top Navigation Links */
+    .top-links {
+      background: #f9f9f9;
+      padding: 20px 0;
+    }
+
+    .top-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .top-links ul li a {
+      text-decoration: none;
+      color: #19486e;
+      font-size: 14px;
+    }
+
+    .top-links ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    /* Section Header with Dropdown */
+    .main-heading {
+      margin-bottom: 30px;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .opinion-heading {
+      color: #1d465c;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .dropdown-icon {
+      font-size: 20px;
+      color: #19486e;
+    }
+
+    .fade-line {
+      height: 2px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      color: #19486e;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title hr {
+  border: none;
+  height: 2px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #19486e;
+}
+
+.sub-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.right-sub-image {
+  flex: 1;
+}
+
+.sub-images img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.side-image-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.main-image-left img {
+  width: 100%;
+  max-width: 32rem;
+}
+.main-image-left{
+ width: 53%;
+}
+
+.main-title-right {
+  flex: 1;
+  min-width: 250px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.main-title-right h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #19486e;
+}
+.main-title-right h2, p{
+  text-align:left;
+}
+
+.main-title-right hr {
+  height: 2px;
+  border: none;
+  background-color: #ccc;
+  margin: 5px 0;
+}
+
+/* Sub Images Layout */
+.sub-images-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.right-sub-image {
+  flex: 1;
+  max-width: 41rem;
+}
+
+.sub-images-layout img {
+  width: 100%;
+}
+.imag{
+  max-width: 30rem;
+}
+.sub-images-layout {
+  margin-top: 30px;
+}
+iframe{
+      width: 100%;
+}
+@media (max-width: 732px){
+   .sub-images-layout{ flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   }
+   iframe{
+      flex-direction: column;
+}
+.main-image-left{
+ width: 79%;
+}
+}
+  </style>
+</head>
+<body>
+   <div id="navbar-placeholder"></div>
+
+  <!-- Top Links -->
+  <nav class="top-links">
+    <ul>
+      <li><a href="#Remote sensing ">• Remote Sensing</a></li>
+      <li><a href="#Arab Peninsula">• Arab Peninsula Landcover Classification using multi satellite data</a></li>
+      <li><a href="#2005–2021">• Hampshire Methane Emission 2005–2021</a></li>
+      <li><a href="#Sesan 2 Dam">• Geomorphic Changes Downstream of Lower Sesan 2 Dam</a></li>
+      <li><a href="#(2013-2021)">• Impact of Climatic Factors in Kakadu (2013–2021)</a></li>
+      <li><a href="#">• CCD PCA Flood Detection in Desert Region</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Section Heading and Dropdown -->
+    <section class="main-heading" id="Remote sensing ">
+      <div class="opinion-heading-container" onclick="toggleDropdown()">
+        <h1 class="opinion-heading">Projects Navigation</h1>
+        <span class="dropdown-icon">▽</span>
+      </div>
+      <div class="fade-line"></div>
+      <div class="opinion-dropdown" id="dropdown">
+        <p><b>Remote sensing </b>is the process of collecting information about the Earth's surface without direct physical contact, typically through sensors mounted on satellites, aircraft, or drones. It involves capturing electromagnetic radiation reflected or emitted by objects on the surface, which is then analyzed to derive meaningful data about land, water, atmosphere, and vegetation. Remote sensing technology plays a critical role in monitoring environmental changes, natural disasters, and land cover dynamics with high spatial and temporal resolution.</p>
+        <h3>Applications of Remote Sensing</h3>
+        <p><b>• Land Use and Land Cover Mapping:</b> Identifying and monitoring changes in forests, agricultural land, urban areas, and wetlands.</p>
+        <p><b>• Disaster Management:</b> Tracking and assessing the impact of natural disasters such as floods, earthquakes, landslides, and wildfires.</p>
+        <p><b>• Agricultural Monitoring:</b> Assessing crop health, estimating yields, and detecting drought stress using vegetation indices like NDVI.</p>
+        <p><b>• Climate and Weather Monitoring:</b> Observing atmospheric changes, temperature variations, and greenhouse gas emissions.</p>
+        <p><b>• Forest Management:</b> Detecting deforestation, forest degradation, and illegal logging activities.</p>
+        <p><b>• Coastal Monitoring:</b> Monitoring coastline changes, erosion, and coral reef health.</p>
+        <p><b>• Urban Planning:</b> Mapping urban expansion, infrastructure development, and land-use planning.</p>
+        <p><b>• Biodiversity and Habitat Conservation:</b> Identifying critical habitats and monitoring changes in ecosystems to aid conservation efforts.</p>
+        <p><b>• Geological Studies:</b> Identifying mineral resources, monitoring volcanic activity, and assessing earthquake risks.</p>
+
+      </div>
+    </section>
+
+ <!-- Section: Image + Title Side-by-Side -->
+<section class="side-image-title" id="Arab Peninsula">
+  <div class="main-image-left">
+    <img src="./img vid/13.png" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Arab Peninsula Landcover Classification using multi satellite data</h2>
+    <hr>
+    <p>The Arab Peninsula Landcover Classification project involved mapping and classifying land cover types across the Arabian Peninsula using multi-satellite data at a high resolution of 10 meters. Leveraging Sentinel-1 (SAR) and Sentinel-2 (optical) imagery, I performed the analysis on Google Earth Engine (GEE), a cloud-based geospatial platform. The classification included distinct land cover classes such as Agriculture, Mangrove, Waterbody, Barren, Forest, Urban, and Shrubs, which were defined using training points merged for each category. This project provides a detailed and accurate land cover map, offering valuable insights for environmental monitoring, resource management, and urban planning across the region. The use of GEE ensured efficient processing of large datasets, making it a scalable solution for regional land cover studies.</p>
+  </div>
+</section>
+
+<!-- Section: Sub Images Layout -->
+<section class="sub-images-layout">
+  <div class="left-sub-images">
+    <img src="./img vid/14.png" alt="Urban Area 1">
+    <img src="./img vid/15.png" alt="Urban Area 2">
+  </div>
+  <div class="right-sub-image">
+    <img src="./img vid/16.png" alt="Urban Area 3">
+  </div>
+</section>
+
+
+
+<section class="side-image-title" id="2005–2021">
+  <div class="main-image-left">
+    <img src="./img vid/17.png" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Hampshaire Methane Emission 2005-2021</h2>
+    <hr>
+    <p>This study analyzed methane emissions across Hampshire, southern England, using data from the National Atmospheric Emissions Inventory (NAEI) and land cover datasets from Digimap for 2007, 2015, and 2021. Methane emissions were mapped using Inverse Distance Weighting (IDW) interpolation in QGIS to visualize spatial emission patterns and trends from 2005 to 2021.
+
+<br><b>Emission Sources: </b>The "Processing & Distribution of Petroleum Products" sector was the dominant methane emitter, with notable emissions from the water, sewerage, and waste treatment sectors.
+
+<br><b>Trends: </b>Methane emissions showed a peak around 2010 (800 tonnes), followed by a significant reduction of over 300 tonnes by 2021. This decrease reflects improvements in industrial practices, stricter regulations, and technological advancements.</div>
+</section>
+
+<!-- Section: Sub Images Layout -->
+<section class="sub-images-layout">
+  <div class="left-sub-images imag">
+    <img src="./img vid/18.png" alt="Urban Area 1">
+  </div>
+  <div class="right-sub-image imag">
+    <img src="./img vid/19.png" alt="Urban Area 3">
+  </div>
+</section>
+
+
+<section class="side-image-title" id="Sesan 2 Dam">
+  <div class="main-image-left">
+    <img src="./img vid/20.png" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Geomorphic Changes Downstream of Lower Sesan 2 Dam</h2>
+    <hr>
+    <p>This project investigates the <b> hydro-geomorphological impacts of the Lower Sesan 2 (LS2) Dam </b>in the Mekong River Basin using Landsat 8 imagery and hydrological analyses. The Normalized <b> Difference Water Index </b>(NDWI) was employed to delineate and monitor the reservoir area over time, while <b> erosion and deposition patterns were assessed using discharge, precipitation, and total suspended solids (TSS) data.</b> Sen’s slope analysis highlighted changes in flow dynamics before and after dam construction, with observed increases in discharge. Stable precipitation patterns were recorded across both periods, suggesting limited influence on geomorphic changes. <b> TSS concentrations during the construction phase were linked to increased downstream deposition, emphasizing the dam’s effect on sediment transport dynamics.</b> This analysis provides essential insights into how dam infrastructure affects hydrology and geomorphology, informing sustainable water resource management and environmental mitigation strategies.</p>
+</section>
+
+<!-- Section: Sub Images Layout -->
+<section class="sub-images-layout">
+  <div class="right-sub-image imag div">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQJ06kBAmTx175h7H35LQ0Dby7P589OiiBgI2R9T1uxzShzw6n9nVNsqxcjTf_xsg/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</section>
+
+<section class="side-image-title" id="(2013-2021)">
+  <div class="main-image-left">
+    <img src="./img vid/21.png" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Impact of Climatic Factors on Forest Fires and Land Cover in Kakadu (2013-2021)</h2>
+    <hr>
+    <p>This Project investigates the <b>factors influencing forest fires and land cover </b> changes in Kakadu National Park, Northern Territory, Australia, from 2013 to 2021. Using Landsat-derived indices such as the <b>Normalized Difference Vegetation Index (NDVI) and Normalized Burn Ratio (NBR)</b> , large wildfire events were analyzed for their impact on vegetation. Post-fire NBR values increased due to spectral changes from burning, while NDVI consistently declined, indicating reduced vegetation health and density. Statistical analyses confirmed these patterns, demonstrating the effectiveness of these indices in monitoring fire-induced landscape changes.
+
+<br><b>Climate variables (precipitation, temperature, specific humidity, and soil moisture) </b> were analyzed through box plots to identify seasonal variations. The analysis revealed significant seasonal fluctuations, particularly in precipitation and soil moisture, which were lower during the middle months, increasing fire susceptibility due to drier vegetation conditions. However, Mann-Kendall trend analysis indicated no statistically significant trends in any climate variables over the study period. Land cover changes, including reductions in forest cover, fluctuations in grasslands, and the effects of fires on shrublands and savannas, were also assessed as critical factors for fire management and conservation planning.</section>
+
+<!-- Section: Sub Images Layout -->
+<section class="sub-images-layout">
+  <div class="right-sub-image imag" >
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQt_oC55jfph9hHMgXyFlCHEwH0ZIAp5IMRJDRF0UwvEMbJLyNhP0G3LLYkeh3huA/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</section>
+
+<section class="side-image-title" id="(2013-2021)">
+  <div class="main-image-left">
+    <iframe  width="480" height="299" src="https://www.youtube.com/embed/B6yixvg-j_8?si=Nx2rWmq-II-a6Rd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"></iframe>
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>CCD PCA analysis for Flood Detection in Desert Region</h2>
+    <hr>
+   </div>
+</section>
+
+
+
+  </main>
+
+
+  <!-- JavaScript -->
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+</body>
+</html>

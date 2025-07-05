@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+.about {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1d4459;
+  margin-bottom: 10px;
+}
+
+.fade-line {
+  width: 50%;
+  height: 2px;
+  margin: 0 auto 30px auto;
+  background: linear-gradient(to right, rgba(29,68,89,0), #1d4459 50%, rgba(29,68,89,0));
+  filter: blur(1px);
+}
+
+.heading {
+  font-size: 2.2rem;
+  color: #1d4459;
+  margin-bottom: 22px;
+  margin-top: 22px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.points p, p, h4 {
+  font-family: 'Times New Roman', Arial;
+  font-size: 1rem;
+  color: #333;
+  margin: 16px 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.education-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.education-images img {
+  width: 100%;
+  max-width: 27rem;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.video-item {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 86%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-title {
+  font-size: 1.3rem;
+  color: #1d4459;
+  margin-top: 10px;
+}
+
+/* ✅ Responsive Breakpoint for small screens */
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+  }
+
+  .video-title {
+    font-size: 1rem;
+  }
+
+  .education-images {
+    gap: 10px;
+  }
+
+  .fade-line {
+    width: 80%;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="fade-line"></div>
+
+  <p>Transforming data into actionable insights, I am a Geospatial Engineer and Remote Sensing Specialist with 6+ years of experience leveraging cutting-edge GIS technologies, machine learning, and satellite imagery to solve complex real-world challenges</p>
+
+  <h4 class="heading">Expertise at</h4>
+  <b><p class="subheading">GIS & Remote Sensing Tools</p></b>
+
+  <div class="points">
+    <p>• QGIS,</p>
+    <p>• ArcGIS Pro</p>
+    <p>• SNAP ESA</p>
+    <p>• Google Earth Engine</p>
+    <p>• Pix4D</p>
+    <p>• Agisoft Metashape</p>
+    <p>• Jupyter Notebook/p>
+    <p>• R Studio</p>
+    <p>• Origin Pro</p>
+    <b><p>Programming</p></b>
+    <p>• Python, PHP, HTML, SQL, JavaScript</p>
+    <b><p>Hydrological Modeling</p></b>
+    <p>• Tree-Based Models (Decision Tree, Random Forest, Gradient Boosting)</p>
+    <p>• Sequential Models (RNN, GRU, LSTM)</p>
+    <p>• Spatial Models (CNN)</p>
+    <p>• Supervise/Unsupervised Algorithms</p>
+    <b><p>Thesis</p></b>
+    <p>Use of PS InSAR, Borehole and Grace Groundwater anomaly datasets to study impact on Lahore land deformation</p>
+
+  </div>
+  <h4 class="heading">Work experience</h4>
+  <b><p class="subheading">Geospatial Engineer – Geospatial Support (2020–Present)</p></b>
+
+  <div class="points">
+    <p>• Conducted disaster mapping for Sentinel Asia using SAR and optical imagery.</p>
+    <p>• Analyzed groundwater anomalies using GRACE/GRACE-FO data and detected land deformation via InSAR and altimetry.</p>
+    <p>• Performed flood simulations (1D/2D) using HecRAS for high precipitation, dam breakage, and river overflow scenarios.</p>
+    <p>• Developed palm detection models using Deep Learning techniques.</p>
+    <p>• Processed KhalifaSat imagery for orthorectification and orthomosaicing.</p>
+    <p>• Created a 10-meter land cover classification for the Arabian Peninsula using Sentinel-1 & 2 on Google Earth Engine.</p>
+    <p>• Groundwater forecasting using RNN and LSTM machine learning models with remote sensing and in-situ data./p>
+    <p>• SWOT accuracy assessment using SWOT River Discharge algorithms and River Guage Discharge Data</p>
+    <p>•  CMIP6 historical and SSPs datasets used for River Discharge prediction and Projection by Machine Learning</p>
+    <b><p>GIS Consultant – Rahman Habib Consultant (2021)</p></b>
+    <p>• Designed lift irrigation maps, including base maps, LULC maps, and topography maps for the Mohar Lift Irrigation Project.</p>
+    <b><p>GIS Specialist – Urban Unit (2019)</p></b>
+    <p>• Mapped industrial land use for Faisalabad, Rawalpindi, and Gujranwala.</p>
+    <p>• Conducted georeferencing and parcel data updates for urban and rural areas.</p>
+    <p>• Supported SDPI Project by developing GIS-based blocks, updating enumeration areas, and mapping layouts for surveys.</p>
+  </div>
+
+  <h4 class="heading">Education</h4>
+  <b><p class="subheading">Geospatial Engineer – Geospatial Support (2020–Present)</p></b>
+  <div class="points">
+    <p>• MS in GIS & Remote Sensing (2022)</p>
+    <p>• BS (Hons) in Geography (2019)</p>
+    <p>• FSC (Pre-Engineering) (2015)</p>
+    <p>• Matric (Science) (2013)</p>
+  </div>
+
+  <h4 class="heading">Education</h4>
+<b><p class="subheading">Geospatial Engineer – Geospatial Support (2020–Present)</p></b>
+
+<div class="points">
+  <p>• MS in GIS & Remote Sensing (2022)</p>
+  <p>• BS (Hons) in Geography (2019)</p>
+  <p>• FSC (Pre-Engineering) (2015)</p>
+  <p>• Matric (Science) (2013)</p>
+</div>
+
+<!-- Add images here -->
+<div class="education-images">
+  <img src="./img vid/10.png" alt="Degree 1" />
+  <img src="./img vid/11.png" alt="Degree 2" />
+</div>
+<!-- Project Videos Section -->
+<h1 class="heading">You can follow my lectures on YouTube</h1>
+
+<div class="video-gallery" style="display: flex ;">
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e-ViOIcBTgI?si=nqAfZWItiV7poWEn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="video-title">Flood Detection using Sentinel 1</p>
+  </div>
+
+  <div class="video-item">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B6yixvg-j_8?si=Nx2rWmq-II-a6Rd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="video-title">CCD PCA analysis for flood detection in desert region</p>
+  </div>
+
+  <div class="video-item">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Cn8ZGPZWSAM?si=lGptgmHZwyeCfayL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="video-title">Hydrological analysis</p>
+  </div>
+</div>
+</section>
+<script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+</body>
+</html>

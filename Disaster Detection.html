@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Sensing Video Showcase</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Top Navigation Links */
+    .top-links {
+      background: #f9f9f9;
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .top-links ul li a {
+      text-decoration: none;
+      color: #19486e;
+      font-size: 14px;
+    }
+
+    .top-links ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    /* Section Header with Dropdown */
+    .main-heading {
+      margin-bottom: 30px;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .opinion-heading {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .dropdown-icon {
+      font-size: 20px;
+      color: #19486e;
+    }
+
+    .fade-line {
+      height: 2px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      color: #19486e;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title hr {
+  border: none;
+  height: 2px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #19486e;
+}
+
+.sub-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.right-sub-image {
+  flex: 1;
+}
+
+.sub-images img {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+}
+
+.side-image-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.main-image-left img {
+  width: 100%;
+  max-width: 32rem;
+}
+
+.main-title-right {
+  flex: 1;
+  min-width: 250px;
+  max-width: 450px;
+  text-align: center;
+}
+
+.main-title-right h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #19486e;
+}
+.main-title-right h2, p{
+  text-align:left;
+}
+
+.main-title-right hr {
+  height: 2px;
+  border: none;
+  background-color: #ccc;
+  margin: 5px 0;
+}
+
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+
+    <nav class="top-links">
+    <ul>
+      <li><a href="#Remote sensing ">Disaster Detection Through Remote Sensing</a></li>
+      <li><a href="#Delhi Groundwater">Volcanic Eruption and Disaster mapping in Tonga</a></li>
+</ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+
+     <section class="main-heading" id="Remote sensing ">
+      <div class="opinion-heading-container" onclick="toggleDropdown()">
+        <h1 class="opinion-heading">Disaster Detection Through Remote Sensing</h1>
+        <span class="dropdown-icon">▽</span>
+      </div>
+      <div class="fade-line"></div>
+      <div class="opinion-dropdown" id="dropdown">
+        <p><b>Remote sensing </b>plays a crucial role in disaster detection, monitoring, and response by providing timely, accurate, and large-scale information on natural and human-induced hazards. Using satellite-based sensors and aerial imagery, remote sensing enables the identification of disaster-prone areas, the monitoring of evolving events, and post-event damage assessment. Optical sensors capture high-resolution images of surface changes, while radar-based sensors like Synthetic Aperture Radar (SAR) are invaluable for all-weather, day-and-night observations. Techniques such as Damage Proxy Mapping (DPM), InSAR, and change detection help quantify damage and assess areas at risk for better decision-making during emergencies.</p>
+        <h3>Applications of Disaster Detection Through Remote Sensing</h3>
+        <p><b>• Flood Monitoring:</b> Identifying inundated areas and tracking flood progression using optical imagery and radar (e.g., Sentinel-1 SAR).</p>
+        <p><b>• Earthquake and Land Deformation:</b> Detecting ground displacement and infrastructure damage using InSAR techniques and damage proxy maps.</p>
+        <p><b>• Landslide Detection:</b> Monitoring slope stability and detecting landslide-prone areas using SAR and optical data.</p>
+        <p><b>• Wildfire Detection:</b> Identifying active fires, burn scars, and post-fire vegetation recovery using thermal imagery and vegetation indices (e.g., NDVI, NBR).</p>
+        <p><b>• Tsunami Impact Assessment:</b> Mapping coastal inundation and destruction following tsunamis using satellite imagery.</p>
+        <p><b>• Volcanic Eruption Monitoring:</b> Detecting volcanic ash plumes, lava flows, and surface deformations with optical and SAR data.</p>
+        <p><b>• Hurricane and Cyclone Damage Assessment: </b>Identifying wind damage to vegetation and infrastructure using post-storm imagery and radar backscatter changes.</p>
+        <p><b>• Drought Monitoring:</b> Using vegetation indices and soil moisture data to assess drought severity and vegetation stress.</p>
+      </div>
+    </section>
+
+
+<section class="side-image-title" id="Delhi Groundwater">
+  <div class="main-image-left">
+    <img src="./img vid/GeoColor_GEOS-West-Zoom-2022 JAN 15 04_00Z-to-2022 JAN 15 10_00Z.gif" alt="Overview Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Delhi Groundwater depletion causing Land deformation</h2>
+    <hr>
+    <p>Groundwater depletion in Delhi and its associated land deformation were analyzed using Sentinel-1 SAR data and the Small Baseline Subset (SBAS) technique by processing Single Look Complex (SLC) interferograms. The observed land deformation in the Delhi region was around -3 mm per 12 days, with the majority concentrated in the New Delhi area. Additionally, GRACE-derived groundwater anomalies indicated a significant depletion of groundwater, with a total loss of over 50 cm from 2003 to 2022. The area of analysis covered a 0.5° x 0.5° grid. </p>
+  </div>
+</section>
+
+  </main>
+
+    <!-- JavaScript -->
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+  <script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+</body>
+</html>

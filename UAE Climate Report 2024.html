@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAE Climate Change Report 2024</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+    }
+
+    h1 {
+      font-weight: 600;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .climate-title {
+      text-align: center;
+      font-size: 3rem;
+      color: #1b4154;
+      margin-bottom: 40px;
+      padding: 20px 0;
+      border-top: 3px solid #1b41545c;
+      border-bottom: 3px solid #1b41545c;
+    }
+
+    .climate-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .main-heading {
+      margin-top: 48px;
+      margin-bottom: 30px;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .opinion-heading {
+      color: #1d465c;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .dropdown-icon {
+      font-size: 20px;
+      color: #19486e;
+    }
+
+    .fade-line {
+      height: 2px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      color: #19486e;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .climate-description {
+      flex: 1 1 45%;
+      font-size: 1.5rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .climate-description p {
+      text-align: left;
+    }
+
+    .doc-preview-full {
+      flex: 1 1 45%;
+      width: 100%;
+      max-width: 1798px;
+      margin: 0 auto;
+    }
+
+    /* PDF iframe */
+    .pdf-embed {
+      width: 100%;
+      height: 800px;
+      border: none;
+      display: block;
+    }
+
+    /* Poster image (for mobile) hidden by default */
+    .pdf-download-mobile {
+      display: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .pdf-download-mobile img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .pdf-download-mobile img:hover {
+      transform: scale(1.02);
+    }
+    .main-title {
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: 23px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #004b73;
+    }
+
+    ol {
+      color: #3c5765;
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      list-style-type: square;
+    }
+
+    /* Responsive behavior for mobile */
+    @media (max-width: 768px) {
+      .climate-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .climate-description {
+        flex: 1 1 100%;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .doc-preview-full {
+        flex: 1 1 100%;
+      }
+
+      .pdf-embed {
+        display: none;
+      }
+
+      .pdf-download-mobile {
+        display: block;
+      }
+    }
+
+        .solutions-title {
+      font-weight: bold;
+    }
+    .solutions-list {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+   <div id="navbar-placeholder"></div>
+
+  <main class="container">
+    <h1 class="climate-title">UAE Climate Change Report 2024</h1>
+
+    <div class="climate-content">
+      <div class="climate-description">
+        <h1>
+          The UAE Climate Change Report 2024 outlines key environmental shifts affecting the region.
+          It includes updated research on rising temperatures, water scarcity, carbon emissions, and government strategies
+          for climate resilience and sustainability. It is a vital document for policymakers, researchers, and citizens alike.
+        </h1>
+      </div>
+
+      <div class="doc-preview-full">
+        <!-- IFRAME PDF (desktop only) -->
+        <iframe class="pdf-embed" src="./uae-climate-report.pdf#toolbar=0&navpanes=0&view=FitH"></iframe>
+
+        <!-- Poster Image PDF (mobile only) -->
+        <a class="pdf-download-mobile" href="./uae-climate-report.pdf" target="_blank">
+          <img src="./img vid/9.png" alt="View UAE Climate Report" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Dropdown Sections -->
+    <section class="main-heading" id="Remote sensing">
+      <div class="opinion-heading-container" onclick="toggleDropdown('dropdown1')">
+        <h1 class="opinion-heading">Major Findings</h1>
+        <span class="dropdown-icon">▽</span>
+      </div>
+      <div class="fade-line"></div>
+      <div class="opinion-dropdown" id="dropdown1">
+        <h3>Precipitation</h3>
+        <p>• UAE experiences low and erratic rainfall (78–120 mm annually), with extreme precipitation events recorded in <b>February and April 2024.</b></p>   
+        <p>• Significant increases in precipitation observed in <b>Al Ain (500%), Dubai (450%)</b>, and <b>Fujairah (350%)</b> compared to the 20-year average.</p>
+        <p>• 3Climate change has led to unpredictable rainfall patterns, posing challenges for water resource management and flood risk mitigation.</p>   
+      <h3>Flooding</h3>
+        <p>• Flooding events in <b>February and April 2024 </b>affected large areas, with <b>Al Ain (588 km²)</b> experiencing the largest impact.</b></p>   
+        <p>• Causes include <b>extreme weather, urbanization,</b> inadequate drainage, and geographical factors like dry riverbeds.</p>
+        <p>• Remote sensing techniques like <b>SAR </b> and <b>CCD-PCA</b> were effective for flood mapping and disaster response.</p>   
+        <p>• Dams play a crucial role in flood control and water storage, holding over <b> 114 million cubic meters of water </b> across 200+ structures.</p>   
+      <h3>Groundwater</h3>
+        <p>• The UAE’s aquifers (limestone, gravel plain, ophiolite, and sand-dune) are under severe pressure from <b> over-extraction </b>and <b>climate change.</b></p>   
+        <p>• Groundwater storage declined significantly from <b>2002 to 2024</b>, with a total drop of <b>-9 cm.</b></p>
+        <p>• Machine learning models (Random Forest and LSTM) accurately predicted groundwater trends using remote sensing data.</p>   
+        <p>• Desalination and treated wastewater are essential for non-potable uses but require careful management.</p>   
+      <h3>Sea Level Rise</h3>
+        <p>• UAE’s <b>34,000 km coastline</b>, with <b>18,000 km populated</b>, faces significant risks from rising sea levels.</p>   
+        <p>• A <b>0.5m sea-level rise</b> could impact <b>5% of infrastructure</b>, and a <b>3m rise</b> could flood <b>40% of urban areas</b>.</p>
+        <p>• More than 85% of the UAE’s population lives along the coastline, increasing vulnerability to flooding and displacement.</p>   
+        <p>• Rising sea levels could also lead to groundwater salinization, affecting agriculture and drinking water sources.</p>   
+      <h3>Population Growth and Urbanization</h3>
+        <p>• The UAE experienced <b>the highest global population growth rate from 1975 to 2005</b>, increasing the strain on infrastructure and water resources.</p>   
+        <p>• Urban sprawl into natural floodplains has further heightened the risk of flood disasters..</p>
+        <h3>GIS and Remote Sensing (RS) Applications</h3>
+        <p>• <b>GIS, remote sensing, and ground surveys</b> can effectively identify high-risk areas and prioritize protective measures.</p>   
+        <p>• Authorities can leverage these technologies for <b>disaster planning and climate change adaptation</b>.</p> 
+      </div>
+    </section>
+
+<!-- Dropdown Section 2 -->
+<section class="main-heading" id="Remote sensing 2">
+  <div class="opinion-heading-container" onclick="toggleDropdown('dropdown2')">
+    <h1 class="opinion-heading">Technological advancements to address climate change in the UAE</h1>
+    <span class="dropdown-icon">▽</span>
+  </div>
+  <div class="fade-line"></div>
+  <div class="opinion-dropdown" id="dropdown2">
+    <h3>Climate Model for UAE</h3>
+    <p><b>• Global & Regional Climate Models (GCMs & RCMs): </b>These are essential for studying large-scale trends and regional variability.</p>
+    <p><b>• Recommendation:</b> A dedicated RCM for UAE would improve analysis of local climate variability and extremes.</p>
+
+    <h3>Precipitation Data</h3>
+    <p><b>• Challenges: </b>Rainfall is scarce and variable in arid regions like the UAE, complicating prediction efforts.</p>
+
+    <p class="solutions-title">Solutions:</p>
+    <ul class="solutions-list">
+      <li>Integrating satellite precipitation data with ground measurements to enhance accuracy.</li>
+      <li>Easier and free access to rain gauge data for research and modeling.</li>
+      <li>Expanding rain gauge stations to improve spatial data coverage.</li>
+    </ul>
+    <h3>Flash Flood Management</h3>
+    <p><b>• Flood Forecasting & Mitigation: </b>Effective strategies include early warning systems, risk mapping, and emergency preparedness.</p>
+        <p class="solutions-title">Technological Solutions:</p>
+    <ul class="solutions-list">
+      <li>High-resolution flood simulations, integrating satellite data and ground observations, have shown accuracy in runoff predictions.</li>
+      <li>Flood control measures like detention basins and dry dams reduce flood damage significantly.</li>
+      <li>Urban drainage alternatives (e.g., porous paving, vegetated swales) promote infiltration and reduce runoff.</li>
+      <li>High-resolution Digital Elevation Models (DEMs) are essential for accurate hydrological modeling.</li>
+    </ul>
+        <h3>Groundwater Monitoring</h3>
+    <p><b>• Groundwater Recharge & Abstraction:</b>Natural recharge is minimal compared to total abstraction, posing sustainability concerns.</p>
+        <p class="solutions-title">Recommendations:</p>
+    <ul class="solutions-list">
+      <li>Increasing monitoring well stations for better spatial coverage and validation.</li>
+      <li>Upgrading outdated equipment to improve monitoring reliability, focusing on battery system enhancements.</li>
+    </ul>
+  </div>
+
+  <!-- Image Section (Centered) -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; margin-top: 50px;">
+  <img src="./img vid/35.jpg" alt="Climate Image 1" style="max-width: 100%; width: 33rem;" />
+  <img src="./img vid/36.jpg" alt="Climate Image 2" style="max-width: 100%; width: 400px;" />
+</div>
+
+<p class="main-title">
+        <span class="highlight">
+    I played a central role in this project, handling every aspect from data collection, analysis, mapping, plotting, and report writing to design.
+      The report highlights the global to Gulf regional to UAE-specific impacts of climate change, emphasizing the heavy precipitation events of February and April 2024 as a wake-up call for Gulf countries to address global warming.
+    </span>
+  </p>
+
+  <h2 style="color: #004b73;">Major focus was on</h2>
+
+  <ol>
+    <li>
+      <strong>Precipitation Pattern Analysis</strong>
+      <ul>
+        <li>Analyzed ground and satellite data (GPM, CHIRPS, PERSIANN CDR) to study UAE precipitation trends.</li>
+        <li>Linked 2024 heavy rainfall events to climate change impacts.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Urban Flooding Events</strong>
+      <ul>
+        <li>Mapped flooding in Dubai, Abu Dhabi, Al Ain, Kalba, Fujairah using geospatial tools.</li>
+        <li>Assessed impacts and suggested improved drainage and urban planning.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Groundwater Estimation</strong>
+      <ul>
+        <li>Used GRACE data to evaluate groundwater decline.</li>
+        <li>Predicted future trends using machine learning (ML).</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Sea-Level Rise Impact</strong>
+      <ul>
+        <li>Analyzed risks to UAE coasts, including flooding, erosion, and saltwater intrusion.</li>
+        <li>Proposed coastal adaptation strategies.</li>
+      </ul>
+    </li>
+  </ol>
+
+</section>
+
+  </main>
+
+  <script>
+function toggleDropdown(id) {
+  const dropdown = document.getElementById(id);
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+  </script>
+<script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+</body>
+</html>

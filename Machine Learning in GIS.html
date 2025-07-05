@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAE Climate Change Report 2024</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Top Navigation Links */
+    .top-links {
+      background: #f9f9f9;
+      padding: 20px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    h2{
+      font-size: 30px;
+    color: #1d465c;
+    }
+
+    .top-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .top-links ul li a {
+      text-decoration: none;
+      color: #19486e;
+      font-size: 14px;
+    }
+
+    .top-links ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    /* Section Header with Dropdown */
+    .main-heading {
+      margin-bottom: 30px;
+    }
+
+    .opinion-heading-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .opinion-heading {
+      color: #1d465c;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .dropdown-icon {
+      font-size: 20px;
+      color: #19486e;
+    }
+
+    .fade-line {
+      height: 2px;
+      background: #ccc;
+      margin: 10px 0;
+    }
+
+    .opinion-dropdown {
+      display: none;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .opinion-dropdown a {
+      display: block;
+      color: #19486e;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+
+    .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title hr {
+  border: none;
+  height: 2px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #19486e;
+}
+
+.sub-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.right-sub-image {
+  flex: 1;
+}
+
+.sub-images img {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+}
+
+.side-image-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+.main-image-left img {
+  width: 100%;
+  max-width: 30rem;
+  border: 1px solid #ccc;
+}
+
+.main-title-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.sub-images-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.left-sub-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 35rem;
+}
+
+.left-sub-images img {
+  width: 100%;
+}
+
+.right-sub-image {
+  flex: 1;
+  max-width: 450px;
+}
+
+.right-sub-image ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 1008px){
+.div{
+  max-width: 22px;
+}
+}
+@media (max-width: 780px){
+.side-image-title{
+  flex-direction: column;
+    align-items: center;
+}
+.sub-images-layout{
+  flex-direction: column;
+    align-items: center;
+}
+}
+
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+
+ <nav class="top-links">
+    <ul style="text-decoration: underline;">
+      <li><a href="#Remote sensing ">Machine Learning in GIS and Remote Sensing</a></li>
+      <li><a href="#Groundwater Prediction">Groundwater Prediction using Machine Learning</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Section Heading and Dropdown -->
+    <section class="main-heading" id="Remote sensing ">
+      <div class="opinion-heading-container" onclick="toggleDropdown()">
+        <h1 class="opinion-heading">Projects Navigation</h1>
+        <span class="dropdown-icon">▽</span>
+      </div>
+      <div class="fade-line"></div>
+      <div class="opinion-dropdown" id="dropdown">
+        <p><b>Machine learning (ML)</b>has become a powerful tool in remote sensing, enabling the extraction of valuable insights from vast amounts of satellite and aerial imagery. By leveraging algorithms that learn from data, ML can automatically classify land cover, detect changes, and identify patterns in complex datasets. Supervised learning methods, such as Random Forest (RF), Support Vector Machines (SVM), and deep learning models like Convolutional Neural Networks (CNNs), are widely used for remote sensing tasks due to their ability to handle high-dimensional data and extract spatial and spectral features effectively.</p>
+        <h3>Applications of Machine Learning in Remote Sensing</h3>
+        <p><b>• Land Cover Classification: </b>ML is used to classify vegetation, urban areas, water bodies, and soil types with high accuracy.</p>
+        <p><b>• Disaster Detection:</b> ML algorithms can rapidly identify disaster-affected areas, such as flood zones, landslides, and wildfire burn scars.</p>
+        <p><b>• Crop Monitoring:</b> ML models analyze vegetation indices to predict crop health, growth stages, and yield estimation.</p>
+        <p><b>• Urban Change Detection:</b> Detecting urban sprawl, infrastructure development, and land-use changes using multi-temporal imagery.</p>
+        <p><b>• Deforestation Monitoring:</b> Identifying deforestation and forest degradation patterns over time for conservation efforts.</p>
+        <p><b>• Object Detection:</b> Locating specific features like buildings, roads, and vehicles in high-resolution images.</p>
+        <p><b>• Water Body Detection:</b> Monitoring changes in lakes, rivers, and reservoirs for drought and flood management.</p>
+        <p><b>• Climate Change Analysis:</b> Identifying trends in glacier retreat, sea-level rise, and desertification using time-series data.
+Machine learning enhances the speed, scalability, and accuracy of remote sensing analyses, offering critical support for environmental monitoring, disaster response, and sustainable resource management.</p>  
+
+      </div>
+    </section>
+
+
+<!-- Section: Groundwater Prediction Title with Image -->
+<section class="side-image-title" id="Groundwater Prediction">
+  <div class="main-image-left">
+    <img src="./img vid/26.png" alt="Code Image">
+  </div>
+  <div class="main-title-right">
+    <hr>
+    <h2>Groundwater Prediction using Machine Learning</h2>
+    <hr>
+    <p>
+      This project used <b>Long Short-Term Memory (LSTM)</b> and <b>Random Forest (RF)</b> models to predict
+      groundwater levels in the UAE. The models were trained using various climate factors, including the El Niño–Southern Oscillation (ENSO) index and GRACE terrestrial water anomaly data.
+      Below is a detailed description of the model performance based on several key evaluation metrics.
+    </p>
+  </div>
+</section>
+
+<!-- Section: Two Graph Images Left + Metrics Right -->
+<section class="sub-images-layout">
+  <div class="left-sub-images">
+    <img src="./img vid/22.png" alt="LSTM Result - Time Series">
+    <img src="./img vid/23.png" alt="LSTM Result - 95% CI">
+  </div>
+  <div class="right-sub-image">
+    <h4>LSTM Model Performance</h4>
+    <p>The LSTM model's performance was evaluated using both training and testing datasets. The evaluation metrics are as follows:</p>
+
+    <h4>Training Set Metrics:</h4>
+    <ul>
+      <li>Root Mean Square Error (RMSE): 1.61</li>
+      <li>Nash-Sutcliffe Efficiency (NSE): 0.21</li>
+      <li>Correlation Coefficient: 0.51</li>
+      <li>Index of Agreement (IA): -1.54</li>
+    </ul>
+
+    <h4>Testing Set Metrics:</h4>
+    <ul>
+      <li>Root Mean Square Error (RMSE): 0.42</li>
+      <li>Nash-Sutcliffe Efficiency (NSE): 0.71</li>
+      <li>Correlation Coefficient: 0.85</li>
+      <li>Index of Agreement (IA): 0.27</li>
+    </ul>
+
+    <p>The testing results indicate better model performance compared to training, with a high correlation coefficient (0.85) and a moderately good NSE value of 0.71.</p>
+  </div>
+</section>
+<section class="sub-images-layout">
+  <div class="left-sub-images">
+    <img src="./img vid/24.png" alt="LSTM Result - Time Series">
+    <img src="./img vid/25.png" alt="LSTM Result - 95% CI">
+  </div>
+  <div class="right-sub-image">
+    <h4>LSTM Model Performance</h4>
+    <p>The LSTM model's performance was evaluated using both training and testing datasets. The evaluation metrics are as follows:</p>
+
+    <h4>Training Set Metrics:</h4>
+    <ul>
+      <li>Root Mean Square Error (RMSE): 1.61</li>
+      <li>Nash-Sutcliffe Efficiency (NSE): 0.21</li>
+      <li>Correlation Coefficient: 0.51</li>
+      <li>Index of Agreement (IA): -1.54</li>
+    </ul>
+
+    <h4>Testing Set Metrics:</h4>
+    <ul>
+      <li>Root Mean Square Error (RMSE): 0.42</li>
+      <li>Nash-Sutcliffe Efficiency (NSE): 0.71</li>
+      <li>Correlation Coefficient: 0.85</li>
+      <li>Index of Agreement (IA): 0.27</li>
+    </ul>
+
+    <p>The testing results indicate better model performance compared to training, with a high correlation coefficient (0.85) and a moderately good NSE value of 0.71.</p>
+  </div>
+</section>
+
+
+</main>
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+ <script src="nav.js"></script>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      const placeholder = document.getElementById("navbar-placeholder");
+      placeholder.innerHTML = data;
+
+      // Wait a moment for DOM to update, then initialize nav
+      setTimeout(() => {
+        setupNavbarEvents();
+      }, 0);
+    });
+</script>
+
+
+  </body> 
+  </html>
